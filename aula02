@@ -1,0 +1,43 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+   string[] aluno= new string[6];
+   int[] matricula=new int[6];
+   double[] nota1= new double[6];
+   double[] nota2= new double[6];
+   double[] nota3= new double[6];
+   double[] nota4= new double[6];
+   double media=0;
+
+   for(int i=1;i<6;i++){
+     Console.WriteLine("Digite o nome do aluno: ");
+     aluno[i]=Console.ReadLine();
+     
+     Console.WriteLine("Digite a matricula do aluno: ");
+     matricula[i]=int.Parse(Console.ReadLine());
+
+     Console.WriteLine("Digite a nota 1 do aluno: ");
+     nota1[i]=double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite a nota 2 do aluno: ");
+     nota2[i]=double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite a nota 3 do aluno: ");
+     nota3[i]=double.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite a nota 4 do aluno: ");
+    nota4[i]=double.Parse(Console.ReadLine());
+  }
+  for(int i=1;i<6;i++){
+    media=(nota1[i]+nota2[i]+nota3[i]+nota4[i])/4;
+    if(media<6){
+      Console.WriteLine($"O aluno {aluno[i]} com a média {media},esta REPROVADO");
+    }
+    else if(media>=6){
+      Console.WriteLine($"O aluno {aluno[i]} com a média {media}, esta APROVADO");
+    }
+  }
+
+  }
+}
