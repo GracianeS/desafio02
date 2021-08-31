@@ -1,0 +1,18 @@
+using System;
+//Sr. João Possui uma loja de tintas , visto que os seus vendedores perdia muito tempo com o calculo da quantidade de tintas usado na pintura, decidiu contratar um Desenvolvedor para fazer um programa que calcule a litragem de tinta usado nos cômodos//
+class Program {
+  public static void Main (string[] args) {
+  float alt, larg,area,litro;
+  Console.WriteLine("Digite a altura.: ");
+  alt=float.Parse(Console.ReadLine());
+
+  Console.WriteLine("Digite o comprimento.: ");
+  larg=float.Parse(Console.ReadLine());
+
+  area=alt*larg;
+
+  litro=area/5;
+
+  Console.WriteLine($"Será necessário {litro} litro(s)");
+  }
+}
